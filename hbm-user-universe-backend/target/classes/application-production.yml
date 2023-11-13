@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: lucy
+    url: jdbc:mysql://139.9.221.200:3306/user_universe?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    hikari:
+      max-lifetime: 120000

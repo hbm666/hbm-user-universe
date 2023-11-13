@@ -9,6 +9,11 @@
         component: './user/Login',
       },
       {
+        name: 'register',
+        path: '/user/register',
+        component: './user/Register',
+      },
+      {
         component: './404',
       },
     ],
@@ -24,12 +29,13 @@
     name: 'admin',
     icon: 'crown',
     access: 'canAdmin',
+    component: './Admin',
     routes: [
       {
         path: '/admin/sub-page',
         name: 'sub-page',
         icon: 'smile',
-        component: './Welcome',
+        component: './admin/UserManage',
       },
       {
         component: './404',
