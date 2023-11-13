@@ -10,9 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 @MapperScan("com.hbm.hbmuseruniverse.mapper")
 public class HbmUserUniverseApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(HbmUserUniverseApplication.class, args);
     }
-
 }

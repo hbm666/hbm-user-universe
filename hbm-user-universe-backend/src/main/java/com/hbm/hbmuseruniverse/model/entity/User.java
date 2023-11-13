@@ -1,9 +1,7 @@
 package com.hbm.hbmuseruniverse.model.entity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
+
 import java.io.Serializable;
 import java.util.Date;
 import lombok.Data;
@@ -63,6 +61,11 @@ public class User implements Serializable {
     private Integer userStatus;
 
     /**
+     * 用户角色 0-普通用户 1-管理员
+     */
+    private Integer userRole;
+
+    /**
      * 创建时间
      */
     private Date createTime;
@@ -75,6 +78,7 @@ public class User implements Serializable {
     /**
      * 是否删除 0-否
      */
+    @TableLogic
     private Integer isDelete;
 
     @TableField(exist = false)

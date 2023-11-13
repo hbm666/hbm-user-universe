@@ -1,6 +1,5 @@
 package com.hbm.hbmuseruniverse.service;
 
-import cn.hutool.crypto.digest.DigestUtil;
 import com.hbm.hbmuseruniverse.model.entity.User;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
